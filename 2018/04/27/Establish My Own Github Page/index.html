@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript" />
+  
+
+  <meta name="description" content="How to establish github page?reference page    Note-yuhe:[] in command indicates that content in brackets can be changed according to your choice. These brackets are not actually existing in command.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://yoooohe.github.io/2018/04/27/Establish My Own Github Page/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="How to establish github page?reference page    Note-yuhe:[] in command indicates that content in brackets can be changed according to your choice. These brackets are not actually existing in command.">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-27T15:01:10.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="How to establish github page?reference page    Note-yuhe:[] in command indicates that content in brackets can be changed according to your choice. These brackets are not actually existing in command.">
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=c114cbe6" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?57e94d016e201fba3603a8a2b0263af0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+  <script type="text/javascript">
+	(function(){
+	    var bp = document.createElement('script');
+	    var curProtocol = window.location.protocol.split(':')[0];
+	    if (curProtocol === 'https') {
+	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+	    }
+	    else {
+	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+	    }
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+  </script>
+
+
+
+  
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+
+  
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/archives/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/category/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/about/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/atom.xml"
+            rel="noopener noreferrer"
+            target="_blank"
+            >
+            RSS
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#How-to-establish-github-page"><span class="toc-text">How to establish github page?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Install-Homebrew"><span class="toc-text">1. Install ++Homebrew++</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Install-Git"><span class="toc-text">2. Install ++Git++</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Install-certain-version-of-node-with-nvm"><span class="toc-text">3. Install certain version of ++node++ with ++nvm++</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Note-yuhe-in-order-to-make-hexo-d-function-we-need-to"><span class="toc-text">Note-yuhe: in order to make hexo d function, we need to</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#npm-install-hexo-deployer-git"><span class="toc-text">npm install hexo-deployer-git</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#when-first-use-git-git-may-require-us-to-input-username-and-password-username-is-our-registered-email"><span class="toc-text">when first use git, git may require us to input username and password, username is our registered email.</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Deployment"><span class="toc-text">Deployment</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Docs-http-hexo-io-docs-deployment-html"><span class="toc-text">Docs: http://hexo.io/docs/deployment.html</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-Establish My Own Github Page" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">(no title)</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2018.04.27</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>Yuhe Ding</span>
+        </span>
+      
+
+      
+
+
+      
+        <span>
+          <i class="icon-comment"></i>
+          <a href="http://www.forsigner.com/2018/04/27/Establish My Own Github Page/#disqus_thread"></a>
+        </span>
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <hr>
+<h2 id="How-to-establish-github-page"><a href="#How-to-establish-github-page" class="headerlink" title="How to establish github page?"></a>How to establish github page?</h2><p><a href="https://hankliu62.github.io/2017/09/09/hexo-github-blog-guide/" target="_blank" rel="noopener">reference page</a>  </p>
+<blockquote>
+<p>Note-yuhe:<br>[] in command indicates that content in brackets can be changed according to your choice. These brackets are not actually existing in command.</p>
+</blockquote>
+<h3 id="1-Install-Homebrew"><a href="#1-Install-Homebrew" class="headerlink" title="1. Install ++Homebrew++"></a>1. Install ++Homebrew++</h3><p><a href="https://brew.sh" target="_blank" rel="noopener">homebrew</a> is a package management tool with Ruby underneath.  </p>
+<p><strong>(1) One simple way to install it:</strong><br><code>$/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code>     </p>
+<p><strong>(2) To check wether we have installed it successfully:</strong><br><code>$brew --version</code> or <code>brew -v</code><br>If successfully:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Homebrew 1.6.2</span><br><span class="line">Homebrew/homebrew-core (git revision 20dd; last commit 2018-04-25)</span><br></pre></td></tr></table></figure></p>
+<p><strong>(3) More brew command:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">##content in [] can be changed</span><br><span class="line"></span><br><span class="line">$ brew --help</span><br><span class="line">$ brew install [git] #install software: git</span><br><span class="line">$ brew uninstall [git] #uninstall software: git</span><br><span class="line">$ brew search [git] #search for certain software</span><br><span class="line">$ brew list #show all installed softwares</span><br><span class="line"></span><br><span class="line">##update all softwares, update all Formula, mark installed and updated softwares with asterisk *</span><br><span class="line">$ brew update</span><br><span class="line">$ brew update [git] #update certain software</span><br><span class="line">$ brew [info | home][FORMULA...] #check software information</span><br><span class="line">$ brew cleanup [git] #delete software</span><br><span class="line">$ brew cleanup</span><br><span class="line">$ brew outdated</span><br><span class="line">$ brew home * #open with web browser</span><br><span class="line">$ brew deps * #show depedent packages</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-Install-Git"><a href="#2-Install-Git" class="headerlink" title="2. Install ++Git++"></a>2. Install ++Git++</h3><p>In mac, there is already one version of git. But we can also install other git with brew. The installed git will have a higher priority than the local one in mac.</p>
+<p><strong>(1) Install Git with brew:</strong><br><code>$ brew install git</code>  </p>
+<p><strong>(2) Check its installment status:</strong><br><code>$ git --version</code></p>
+<h3 id="3-Install-certain-version-of-node-with-nvm"><a href="#3-Install-certain-version-of-node-with-nvm" class="headerlink" title="3. Install certain version of ++node++ with ++nvm++"></a>3. Install certain version of ++node++ with ++nvm++</h3><p>nvm is node managment tool in mac, very similar to rvm of Ruby.<br><strong>(1) install nvm:</strong><br><code>$ brew install nvm</code>    </p>
+<p><strong>(2) configure nvm:</strong><br>edit ~/.bash_profile, if not existed, create one.<br><code>$ cd ~</code>, <code>vim .bash_profile</code><br>(note-yuhe: I usually use nano to edit file)<br>In .bash_profile, we need to add commands below:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">export NVM_DIR=~/.nvm</span><br><span class="line">source $(brew --prefix nvm)/nvm.sh</span><br><span class="line">```   </span><br><span class="line">we can reopen the terminal to let edited one active or use command</span><br><span class="line">`source .bash_profile`</span><br><span class="line"></span><br><span class="line">**(3) install ++node++:**</span><br></pre></td></tr></table></figure></p>
+<p>$ nvm ls-remote #check all available version<br>$ nvm install [v8.4.0] #the version you want<br>$ nvm use [v8.4.0] #use certaion version of node<br>$ nvm alias default [v8.4.0] #default version when open termial<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">**(4) check installment status:**  </span><br><span class="line">`$ node -v`, `$npm -v`</span><br><span class="line"></span><br><span class="line">### 4. Install ++hexo++     </span><br><span class="line">hexo is a blog framework    </span><br><span class="line">**(1) install hexo with npm:**    </span><br><span class="line">install globally(全局安装):  </span><br><span class="line">`$ npm install -g hexo`</span><br><span class="line"></span><br><span class="line">### 5. Initialize ++Hexo++  </span><br><span class="line">**(1) create blog directory:**  </span><br><span class="line">I create a github-workspace in user file and then make a directory of my blog</span><br></pre></td></tr></table></figure></p>
+<p>$ cd ~<br>$ mkdir github-workspace<br>$ mkdir yoooohe.github.io<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">**(2) initialize hexo:**  </span><br><span class="line">`$ hexo init`   </span><br><span class="line">After this, there will be several files under my blog directory:</span><br></pre></td></tr></table></figure></p>
+<p>files:<br>_config.yml, db.json, package-lock.json, package.json</p>
+<p>directories:<br>node_modules. public, scaffolds, source, themes<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">**(3) make basic configuration in ++_config.yml++**   </span><br><span class="line">including blog title, author, description and etc.  </span><br><span class="line">&gt; [1] all colon &quot;:&quot; in `_config.yml` should have a space after that, otherwise, local test will fail.   </span><br><span class="line">[2] language set to `zh-Hans` means chinese. If after setting, there is still Mojibake， we may need to change encoding style to UTF-8</span><br><span class="line"></span><br><span class="line">**(4) change hexo themes:**   </span><br><span class="line">There are many [Hexo themes](https://hexo.io/themes/) can be adopted in our own blog. In theme directory, We can get these themes by use `git clone` and then edit theme in _config.yml</span><br></pre></td></tr></table></figure></p>
+<p>$ cd themes<br>$ git clone [<a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:forsigner/fexo.git themes/fexo]</p>
+<p>##edit _config.yml, change theme: [fexo]</p>
+<p>##update theme<br>$ cd themes/[fexo]<br>$ git pull</p>
+<p>##change avatar<br><code>theme/[fexo]/source/images/avatar.jpg</code></p>
+<p>##republish hexo to github page<br>$ hexo clean<br>$ hexo g  #hexo generate<br>$ hexo d #hexo deploy</p>
+<h2 id="Note-yuhe-in-order-to-make-hexo-d-function-we-need-to"><a href="#Note-yuhe-in-order-to-make-hexo-d-function-we-need-to" class="headerlink" title="Note-yuhe: in order to make hexo d function, we need to"></a>Note-yuhe: in order to make hexo d function, we need to</h2><h1 id="npm-install-hexo-deployer-git"><a href="#npm-install-hexo-deployer-git" class="headerlink" title="npm install hexo-deployer-git"></a>npm install hexo-deployer-git</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Or we can use ++Fork++ to further develop by ourselves.   </span><br><span class="line"></span><br><span class="line">**(5) add new blogs:**  </span><br><span class="line">All the source files are written in ++markdown++ file and stored in `source/_posts`</span><br><span class="line"></span><br><span class="line">**(6) start local server to preview local blog:**</span><br></pre></td></tr></table></figure>
+<p>$ hexo g<br>$ hexo s<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">more [hexo command](https://segmentfault.com/a/1190000002632530)</span><br></pre></td></tr></table></figure></p>
+<p>$ hexo server //start the server<br>$ hexo s #simplified version of previous one<br>$ hexo server -s #static mode<br>$ hexo server -p 5000 #change port<br>$ hexo server -i 192.168.1.1 # customize IP address</p>
+<p>##INFO  Start processing</p>
+<p>##INFO  Hexo is running at <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>. Press Ctrl+C to stop.</p>
+<p>$ hexo clean #clean cache<br>$ hexo new page [“file”]  #create new directory called file and automatically create index.md under that directory</p>
+<p>##create new blog<br>$ hexo n fileName<br>$ hexo new [“fileName”]<br>$ hexo new post fileName<br>$ hexo new post [“fileName”]</p>
+<p>##generate/compile/publish (generate static web page)<br>$ hexo generate<br>$ hexo g<br>$ hexo generate watch<br>$ hexo deploy<br>$ hexo d</p>
+<p>##deploy after generate</p>
+<p>##two commands have same effect<br>$ hexo generate –deploy<br>$ hexo deploy –generate<br>$ hexo deploy -g<br>$ hexo server -g<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">**(7) http://localhost:4000**  </span><br><span class="line">input local address to visit</span><br><span class="line"></span><br><span class="line">### 6. Deploy to Github  </span><br><span class="line">**(1) apply Github account**   </span><br><span class="line">install deployment tool</span><br></pre></td></tr></table></figure></p>
+<p>$ npm install hexo-deployer-git –save<br>$ git init<br>$ git remote add origin <a href="https://github.com/Yoooohe/Yoooohe.github.io.git" target="_blank" rel="noopener">https://github.com/Yoooohe/Yoooohe.github.io.git</a></p>
+<h2 id="when-first-use-git-git-may-require-us-to-input-username-and-password-username-is-our-registered-email"><a href="#when-first-use-git-git-may-require-us-to-input-username-and-password-username-is-our-registered-email" class="headerlink" title="when first use git, git may require us to input username and password, username is our registered email."></a>when first use git, git may require us to input username and password, username is our registered email.</h2><p>$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>$ git add<br>$ git commit -m [‘content’]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">**(2) new repository**    </span><br><span class="line">when input `Repository name`, it is better to have same name with `username` in the front   </span><br><span class="line"></span><br><span class="line">**(3) choose a theme**   </span><br><span class="line">`https://github.com/Yoooohe/Yoooohe.github.io/settings` -&gt; Github Pages -&gt; theme chooser       </span><br><span class="line">it doesn&apos;t matter, we will use hexo theme finally         </span><br><span class="line"></span><br><span class="line">**(4) combine with hexo, publish to github**         </span><br><span class="line">In `yoooohe.github.io directory`, we need to edit `_config.yml` like this:</span><br></pre></td></tr></table></figure></p>
+<p>_config.yml:</p>
+<h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><h2 id="Docs-http-hexo-io-docs-deployment-html"><a href="#Docs-http-hexo-io-docs-deployment-html" class="headerlink" title="Docs: http://hexo.io/docs/deployment.html"></a>Docs: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="noopener">http://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>  type: git<br>  branch: master<br>  repo: <a href="https://github.com/Yoooohe/Yoooohe.github.io.git" target="_blank" rel="noopener">https://github.com/Yoooohe/Yoooohe.github.io.git</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>
+<p>Finally, my website~<br><a href="https://yoooohe.github.io">https://yoooohe.github.io</a></p>
+
+    
+  </div>
+
+  
+      <div class="git"></div>
+  
+
+</article>
+
+
+   
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持forsigner</div>
+        <ul>
+        
+          <li class="item">
+            <span>微信扫一扫</span>
+            <img src="/images/qr-wechat.png" alt="">
+          </li>
+        
+          <li class="item">
+            <span>支付宝扫一扫</span>
+            <img src="/images/qr-alipay.png" alt="">
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/2018/04/26/hello-world/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="hide pull-right" href="/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/atom.xml"
+              rel="noopener noreferrer"
+              target="_blank"
+              >
+              RSS
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+  <section class="disqus-comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+
+  <script>
+    var disqus_shortname = 'forsigner';
+    
+    var disqus_url = 'https://yoooohe.github.io/2018/04/27/Establish My Own Github Page/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <script id="dsq-count-scr" src="//forsigner.disqus.com/count.js" async></script>
+
+
+
+    
+    
+
+    
+    
+
+    
+
+    
+    
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>
